@@ -1,0 +1,15 @@
+#Step 1: Data Preprocessing
+data = pd.read_csv("./Loan_Data.csv")
+
+# Handle missing values (example: filling missing numerical values with median)
+data.fillna(data.median(), inplace=True)
+
+# Encode categorical variables (example: one-hot encoding)
+data = pd.get_dummies(data)
+
+# Define numerical features (replace with your actual column names)
+numerical_features = ["income", "years_employed", "fico_score"]
+
+# Scale numerical features (example: standard scaling)
+scaler = StandardScaler()
+data[numerical_features] = scaler.fit_transform(data[numerical_features])
