@@ -1,3 +1,5 @@
+```Python
+
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 import numpy as np
@@ -30,3 +32,4 @@ Output():
 
 [[ 8.18520373 0.54490854 0.01994244 -2.77630853 -0.02418391]] [-0.09162643] 0.0037 0.9925106069101026
 
+```
